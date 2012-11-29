@@ -31,11 +31,6 @@ class Matrix
 	
 	end
 
-	def +(other)
-    	return Racional.new(self.num() * other.denom() + other.num() * self.denom(), self.denom() * other.denom()).fraccion
-  	end
-
-
 
 	 def +(other)
 		i = 0
