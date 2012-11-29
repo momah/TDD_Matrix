@@ -11,6 +11,5 @@ class Matrix
 	  
 	attr_reader :matrix, :filas, :columnas
 
-
 end
 
