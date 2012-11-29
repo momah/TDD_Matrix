@@ -13,4 +13,9 @@ describe Matrix do
     (@matrixnumeric_1 + @matrixnumeric_2).matrix.inspect.should == "[[1, 2], [3, 3]]"
   end
 
+   it "Se debe poder multiplicar una matriz de Enteros" do
+    (@matrixnumeric_1 + @matrixnumeric_2).matrix.inspect.should == "[[0, 1], [2, 2]]"
+  end
+
+
 end
