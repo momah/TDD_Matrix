@@ -12,3 +12,5 @@ describe Matrix do
   it "Se debe poder sumar dos matrices de enteros" do
     (@matrixnumeric_1 + @matrixnumeric_2).matrix.inspect.should == "[[1, 2], [3, 3]]"
   end
+
+end
