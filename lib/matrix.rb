@@ -47,5 +47,21 @@ class Matrix
 		end
 		return sum
 	end
+
+	def *(other)
+		i = 0
+		j = 0		
+		Matrix.new(mul)
+		sum = @matrix
+		while i < @filas   
+		   while j < @columnas
+			mul[i][j] *= other.matrix[i][j]
+			j += 1
+		   end
+		   i += 1
+		   j = 0
+		end
+		return mul
+	end
 end
 
