@@ -10,7 +10,7 @@ class Matrix
 	  
 	attr_reader :matrix, :filas, :columnas
 	
-	def matrix
+	  	def matrix
 	   formato = numeric
 	   if matrix[0][0].is_a? Racional then
 	   	formato = racional
@@ -19,16 +19,22 @@ class Matrix
 		j = 0
 	  	puts ""
 	  	while i < filas
-	    	   while j < columnas
-			print("#{matrix[i][j]} ")
-			j += 1
+	    		while j < columnas
+			   if formato = numeric then
+				print("#{matrix[i][j]} ")
+			   elsif formato = racional
+		 		print("#{matrix[i][j].fraccion} ")
+			   j += 1
+			   elsif
+				puts"formato matriz no valido!!"
+	    		   end
+	    		   puts ""
+	    		   i += 1
+			   j = 0
+	  		end
 	  		puts ""
-	    	   end
-		   i += 1
-		   j = 0
-		   puts ""
-		end
-	
+	    	end
+		puts ""
 	end
 
 
@@ -38,7 +44,7 @@ class Matrix
 		Matrix.new(sum)
 		sum = @matrix
 		while i < @filas   
-		   while j < @columnas
+		   while j < @columnas			
 			sum[i][j] += other.matrix[i][j]
 			j += 1
 		   end
