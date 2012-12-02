@@ -56,11 +56,16 @@ class Matrix
 
  	def *(other)
 		i = 0
-		j = 0
+		j = 0		
 		mul = @matrix
-		while i < @filas
+		while i < @filas   
 		   while j < @columnas
-			mul[i][j] *= other.matrix[i][j]
+			if formato == "numeric" then
+				mul[i][j].fraccion *= other.matrix[i][j]
+			else formato == racional				
+				mul[i][j] = mul[i][j].fraccion + other.matrix[i][j].fraccion
+			end
+			
 			j += 1
 		   end
 		   i += 1
