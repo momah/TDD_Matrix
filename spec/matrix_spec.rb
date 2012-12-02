@@ -34,4 +34,5 @@ describe Matrix do
   it "Se debe poder sumar dos matrices de racionales" do
     (@matrixracional_1 + @matrixracional_2).racional.should == "[[3/4, 1/1], [3/4, 3/5]]"
   end
+
 end
