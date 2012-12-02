@@ -32,7 +32,10 @@ describe Matrix do
   end
 
   it "Se debe poder sumar dos matrices de racionales" do
-    (@matrixracional_1 + @matrixracional_2).racional.should == "[[3/4, 1/1], [3/4, 3/5]]"
+    (@matrixracional_1 + @matrixracional_2).racional.should == "[[3/2, 1/1], [3/4, 3/5]]"
   end
 
+  it "Se debe poder multiplicar dos matrices de Racionales" do
+    (@matrix_racional_1 * @matrix_racional_2).racional.should == "[[1/2, 2/9], [1/4, 2/25]]"
+  end
 end
